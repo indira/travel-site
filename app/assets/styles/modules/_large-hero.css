@@ -1,23 +1,42 @@
 .large-hero {
-    position: relative;
+    display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     border-bottom: 10px solid $mainBlue;
 
+    /*
+                //commented because we are using grid
+                position: relative;
+                */
     &__image {
-        display: block;
-    }
+        grid-column: 1;
+            grid-row: 1;
+        
+            img {
+            display: block;
+            }
+        }
 
     &__text-content {
-        position: absolute;
-        top: 50%;
+        align-self: center;
+            grid-column: 1;
+            grid-row: 1;
+            padding-top: 60px;
+            text-align: center;
+            /* 
+                                        This is to position the text-content block in position absolute way. 
+                                        Since we are using the grid , these things are commented
         left: 0;
         width: 100%;
         height: auto;
+        position: absolute;
+            top: 50%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
-        text-align: center;
+    */
     }
 
     &__title {
