@@ -7,7 +7,11 @@
     &--orange {
         background-color: $mainOrange;
     }
-
+    &--small {
+        @mixin atMedium {
+            display:block;
+        }   
+    }
     &--large {
         padding: 0.75rem 1.1rem;
 

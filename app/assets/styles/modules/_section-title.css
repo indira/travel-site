@@ -8,9 +8,10 @@
         font-size: 3.75rem;
     }
 
-        &--blue {
-            color: $mainBlue;
-        }
+    &--blue {
+        color: $mainBlue;
+    }
+
     strong {
         font-weight: 500;
     }
@@ -29,6 +30,5 @@
             margin-left: 0;
             margin-bottom: 0;
         }
-
-        }
+    }
 }

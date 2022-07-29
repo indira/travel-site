@@ -1,31 +1,31 @@
 .large-hero {
     display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     border-bottom: 10px solid $mainBlue;
 
     /*
-                //commented because we are using grid
-                position: relative;
-                */
+    //commented because we are using grid
+    position: relative;
+    */
     &__image {
         grid-column: 1;
-            grid-row: 1;
-        
-            img {
+        grid-row: 1;
+
+        img {
             display: block;
-            }
         }
+    }
 
     &__text-content {
         align-self: center;
-            grid-column: 1;
-            grid-row: 1;
-            padding-top: 60px;
-            text-align: center;
-            /* 
-                                        This is to position the text-content block in position absolute way. 
-                                        Since we are using the grid , these things are commented
+        grid-column: 1;
+        grid-row: 1;
+        padding-top: 60px;
+        text-align: center;
+        /* 
+        This is to position the text-content block in position absolute way. 
+        Since we are using the grid , these things are commented
         left: 0;
         width: 100%;
         height: auto;
@@ -48,7 +48,6 @@
         @mixin atSmall {
             font-size: 4.8rem;
         }
-
     }
 
     &__sub-title {
@@ -60,8 +59,6 @@
         @mixin atSmall {
             font-size: 2.9rem;
         }
-
-
     }
 
     &__description {
